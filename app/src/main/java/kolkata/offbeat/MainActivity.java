@@ -1,7 +1,6 @@
 package kolkata.offbeat;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -48,9 +47,9 @@ public class MainActivity extends AppCompatActivity {
                         ed.putString("n", name.getText().toString());
                         ed.putString("p", phone.getText().toString());
                         ed.commit();
-                        Toast.makeText(MainActivity.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Registered Successfully", Toast.LENGTH_LONG).show();
                     } else {
-                        Toast.makeText(MainActivity.this, "Already Registered", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Already Registered", Toast.LENGTH_LONG).show();
                     }
                 }
                 else {
@@ -71,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Updated Successfully", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(MainActivity.this, "Nothing to be Updated", Toast.LENGTH_SHORT).show();
-
                 }
             }
         });
@@ -100,7 +98,6 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     Toast.makeText(MainActivity.this, "User is not Registered", Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
     }
